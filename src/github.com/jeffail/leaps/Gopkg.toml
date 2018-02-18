@@ -1,0 +1,39 @@
+# Gopkg.toml example
+#
+# Refer to https://github.com/golang/dep/blob/master/docs/Gopkg.toml.md
+# for detailed Gopkg.toml documentation.
+#
+# required = ["github.com/user/thing/cmd/thing"]
+# ignored = ["github.com/user/project/pkgX", "bitbucket.org/user/project/pkgA/pkgY"]
+
+[[constraint]]
+  name = "github.com/elazarl/go-bindata-assetfs"
+  revision = "57eb5e1fc594ad4b0b1dbea7b286d299e0cb43c2"
+
+[[constraint]]
+  name = "github.com/garyburd/redigo"
+  version = "v1.0.0"
+
+[[constraint]]
+  name = "github.com/go-sql-driver/mysql"
+  version = "v1.0-446-g7ebe0a5"
+
+[[constraint]]
+  name = "github.com/jeffail/util"
+  revision = "36e882756e538c55352881516b3796ed6399f4cb"
+
+[[constraint]]
+  name = "github.com/lib/pq"
+  revision = "3cd0097429be7d611bb644ef85b42bfb102ceea4"
+
+[[constraint]]
+  name = "github.com/satori/go.uuid"
+  version = "v1.0.0"
+
+[[constraint]]
+  name = "golang.org/x/net"
+  revision= "34057069f4ab13dc4433c68d368737ebeafcccdc"
+
+[prune]
+  go-tests = true
+  unused-packages = true
